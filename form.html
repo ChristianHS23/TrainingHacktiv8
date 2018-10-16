@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Buat Account Baru!</h1>
+    <h2>Sign Up Form</h2>
+    <form action="welcome.html" >
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+                <label for="first-name">First Name</label>
+                <input type="text" name="firsName" id="first-name">
+            </p>
+            <p>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="lastName" id="last-name">
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="gender">Gender :</label><br>
+                <input type="radio" name="gender" id="male-radio" value="male">
+                <label for="male-radio">Male</label><br>
+                <input type="radio" name="gender" id="female-radio" value="female">
+                <label for="female-radio">Female</label><br>
+                <input type="radio" name="gender" id="other-radio" value="other">
+                <label for="other-radio">Other</label>  <br>
+            </p>
+            <p>
+                <label for="nationality">Nationality :</label><br>
+                <input type="text" name="nationality" list="nationalityLangs"/>
+                <datalist id="nationalityLangs">
+                    <select name="altNationalityLangs" ></select>
+                        <option value="Indonesia" id="altNationalityLangs">Indonesia</option>
+                        <option value="Singapura" id="altNationalityLangs">Singapura</option>
+                        <option value="China" id="altNationalityLangs">China</option>
+                        <option value="Malaysia" id="altNationalityLangs">Malaysia</option>
+                    </select>
+                </datalist>
+            </p>
+            <p>
+                <label for="langSpoken">Language Spoken :</label><br>
+                <input type="checkbox" name="langSpoken" id="indonesia-spoke" value="b.indonesia">
+                <label for="indonesia-spoke">Bahasa Indonesia</label><br>
+                <input type="checkbox" name="langSpoken" id="inggris-spoke" value="english">
+                <label for="inggris-spoke">English</label><br>
+                <input type="checkbox" name="langSpoken" id="other-lang" value="other">
+                <label for="other-lang">Other</label><br>
+            </p>
+            <p>
+                <label for="bio">Bio :</label><br>
+                <textarea name="'bio'" id="biO" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>
