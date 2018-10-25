@@ -18,6 +18,7 @@ while(maksLoop!=0){
     console.log(maksLoop+' - ' +loop2)
 
 }
+//---------------------------------Soal 2----------------------------------------------
 console.log("Looping ke-1")
 for(var i=1; i<=20;i++){
 
