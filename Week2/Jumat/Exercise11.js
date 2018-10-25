@@ -1,9 +1,7 @@
-var input =''
-var kata=input
 function balikKata(kata) {
-   var jumlahKata= kata.length-1
-   for(var i=jumlahKata;i>=0;i--){
-       input+=kata.charAt(i)
+    var input =''
+   for(var i=kata.length-1;i>=0;i--){
+      input+= kata[i]
    }
    return input
     // you can only write your code here!
