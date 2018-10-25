@@ -61,7 +61,7 @@ console.log(star)
 console.log("Iseng")
 
 
-var count=9;//count harus ganjil supaya bintang di tengah tidak error
+var count=12;//count harus ganjil supaya bintang di tengah tidak error
 var lineOfStar=''
 
 for(var i=0;i<count;i++){
