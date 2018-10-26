@@ -53,19 +53,19 @@ soal no 3
 
 Algorithm
 =================================
-1. Simpan nilai "foxi" dengan angka 0
-2. Simppan nilai "foxi" dengan angka 20
-3. Ulangi step 3 selama "foxi" masih dibawah 20. Jika "foxi" sudah 5, lanjut ke step 4.
-4. Tambah "foxi" dengan 1, agar semakin mendekati batas perulangan. Kembali ke step 2.
+1. Simpan nilai "pakaian foxi" nilai berapapun
+2. Simpan nilai "total pakaian" nilai berapapun
+3. Jika "pakaian foxi"  tidak sama dengan "total pakaian" masuk ke step 4. Jika "pakaian foxi" sudah sama dengan "total pakaian", lanjut ke step 5.
+4. Tambah "pakaian foxi" dengan 1. Kembali ke step 3.
 5. Tampilkan "mesin cuci sudah menyala"!
 
 
 pseudocode 
 ==============================
-STORE "foxi" with 0
-
-WHILE "foxi" < 5
-  ADD "foxi" by 1
+STORE "pakaian foxi" with any value
+STORE "total pakaian"with any value
+WHILE "pakaian foxi" != "total pakaian"
+  ADD "pakaian foxi" by 1
 
 DISPLAY "mesin cuci sudah menyala"!
 */
