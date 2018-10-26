@@ -68,62 +68,36 @@ WHILE "pakaian foxi" != "total pakaian"
   ADD "pakaian foxi" by 1
 
 DISPLAY "mesin cuci sudah menyala"!
-*/
 
-/*
+
 soal no 4
 
 Algorithm
 =================================
 
-
-
-var siswa = 0;
- var randomKesalahan = Math.floor(Math.random() * 2)
- console.log(randomKesalahan)
-
- while(siswa < 40){
-     siswa++
-
-     randomKesalahan = Math.floor(Math.random() * 2)
-     console.log(siswa)
-     if(randomKesalahan == true){
-         console.log('guru menghukum')
-     } else if(randomKesalahan == false){
-         console.log('guru memuji')
-     }
-         
-  }
- 
-
-1. Simpan nilai siswa dengan angka 0;
-2. Simpan nilai randomKesalahan dengan random di kali  2
-3. tampilkan randomKEsalahan
-4. ulangi step 4 jika nilai masih kurang dari  40
-5. Tambah "siswa" dengan 1, agar semakin mendekati batas perulangan. Kembali ke step 2.
-4. nilai randomKesalahan sama dengan random di kali  2
-5. tampilkan siswa
-6. jika nilai randomKesalahan sama dengan true, maka lanjut ke no 7
-7. tampilkan "guru menghukum"
-8. dan jika randomKesalahan sama dengan false, maka lanjut ke no 8
-9. tampilkan "guru memuji"
+1. Simpan nilai siswa dengan nilai 0
+2. Simpan nilai randomKesalahan dengan nilai berapapun
+3. Simpan nilai totalSiswa dengan nilai 40
+3. Selama siswa tidak Sama dengan totalSiswa ulangi langkah-4, jika siswa sama dengan totalSiswa pergi ke langkah 8
+4. Melakukan randomKesalahan dengan merandom 0(false) atau 1(true) Pergi ke langkah 5
+5. Jika randomKesalahan sama dengan 1(true) Maka guru akan menghukum murid , pergi ke langkah 7
+6. Jika randomKesalahan sama dengan 0(false) Maka guru akan memuji murid, pergi ke langkah 7
+7. guru mengecek siswa berikutnya , kembali ke langkah 3.
+8. guru selesai mengecek murid
 
 pseudocode
 =======================================
 
-STORE "siswa" with 1
-STORE "randomKesalahan" with Math.floor(Math.random() * 2)
-WHILE "siswa" < 40
-	DISPLAY "randomKEsalahan"
-  
-"randomKEsalahan" equels Math.floor(Math.random() * 2)
-	DISPLAY "siswa"
-jika "randomKEsalahan" equels true
-	DISPLAY "guru menghukum"
+STORE "siswa" with 0
+STORE "totalSiswa" with 40
+STORE "randomKesalahan" with any value
+WHILE "siswa" < "totalSiswa"
+    "randomKesalahan" EQUALS to RANDOM 0 OR 1
+    Jika "randomKesalahan" EQUALS to 1
+	    DISPLAY "guru menghukum murid"
 
-jika "randomKEsalahan" equels false
-	DISPLAY "guru memuji"
+    Jika "randomKesalahan" EQUALS to 0
+	    DISPLAY "guru memuji murid"
 
-*/    
     
 
