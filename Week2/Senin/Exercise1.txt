@@ -1,58 +1,54 @@
-
-/*
-
 SOAL 1.
 Algorithm
 ==============================
-1. simpan m dengan nilai berapapun
-2. simpan a dengan nilai berapapun
-3. simpan Ef tanpa diberikan nilai, ini akan kami isi nanti.
-3. Hitung hasil perkalian 'm' dengan 'a'
+1. simpan M dengan nilai berapapun
+2. simpan A dengan nilai berapapun
+3. simpan EF tanpa diberikan nilai
+3. Hitung hasil perkalian 'M' dengan 'A'
 4. setelah mendapatkan hasil perhitungan, isikan hasil kedalam 'EF'
-4. tampilkan nilai dar 'EF'
+4. tampilkan nilai dari 'EF'
 
 
 pseudocode 
 ==============================
-STORE 'm' with any value
-STORE 'a' with any value
-STORE 'Ef' without any value
+STORE 'M' with any value
+STORE 'A' with any value
+STORE 'EF' without any value
 
-CALCULATE 'm' times 'a'
-SET 'Ef' value with calculation result
+CALCULATE 'M' times 'A'
+SET 'EF' value with calculation result
 
 DISPLAY 'EF'
-*/
-/*
+
 
 SOAL NO 2
 Alghoritm
 ==============================
 
-1. simpan tahun lebih besar dari 0 
-2. jika simpan 'Tahun dengan modulus 4 sama dengan 0 dan tahun dengan modulus 100 tidak sama dengan 0, masuk langkah ke 2
+1. simpan tahun dengan nilai berapapun
+2. jika simpan 'Tahun di modulus 4 sama dengan 0 dan tahun di modulus 100 tidak sama dengan 0, masuk langkah ke-2
 2.      tampilkan  "tahun kabisat".
-3. jikainput Tahun dengan modulus 4 sama dengan 0 dan tahun dengan modulus 100 tidak samadengan 0, masuk langkah ke 2 dan tahun dengan modulus 400 samadengan 0;
+3. jika input Tahun di modulus 4 sama dengan 0 dan tahun di modulus 100  sama dengan 0 dan tahun di modulus 400 sama dengan 0, masuk langkah ke-2 ;
 4.      tampilkan  "tahun kabisat".
-5. jika bukan, maka tampilkan no 6
-6.      tampilkan  "bukan tahun kabsiat"
+5. jika tidak, maka masuk langkah ke-6
+6.      tampilkan  "bukan tahun kabisat"
 
 
 pseudocode 
 ==============================
 
-STORE tahun with > 0
-if 'tahun' modulus 4 equals 0 AND 'tahun' modulus  100 not equals 0;
-    DISPLAY 'tahun Kabsiat' 
-else if 'tahun' modulus 4 equals 0 AND 'tahun' modulus  100 equals 0 AND 'tahun' modulus 400 equels 0;
-    DISPLAY 'tahun kabsiat'
+STORE tahun with any value
+if 'tahun' modulus 4 EQUALS 0 AND 'tahun' modulus  100 NOT EQUALS 0;
+    DISPLAY 'tahun Kabisat' 
+else if 'tahun' modulus 4 EQUALS 0 AND 'tahun' modulus  100 EQUALS 0 AND 'tahun' modulus 400 EQUALS 0;
+    DISPLAY 'tahun kabisat'
 else 
-    DISPLAY 'bukan tahun kabsiat'
+    DISPLAY 'bukan tahun kabisat'
 
 }
-*/
 
-/*
+
+
 soal no 3
 
 Algorithm
