@@ -78,12 +78,12 @@ Algorithm
 1. Simpan nilai siswa dengan nilai 0
 2. Simpan nilai randomKesalahan dengan nilai berapapun
 3. Simpan nilai totalSiswa dengan nilai 40
-3. Selama siswa tidak Sama dengan totalSiswa ulangi langkah-4, jika siswa sama dengan totalSiswa pergi ke langkah 8
-4. Melakukan randomKesalahan dengan merandom 0(false) atau 1(true) Pergi ke langkah 5
-5. Jika randomKesalahan sama dengan 1(true) Maka guru akan menghukum murid , pergi ke langkah 7
-6. Jika randomKesalahan sama dengan 0(false) Maka guru akan memuji murid, pergi ke langkah 7
-7. guru mengecek siswa berikutnya , kembali ke langkah 3.
-8. guru selesai mengecek murid
+4. Selama siswa tidak Sama dengan totalSiswa ulangi langkah-5, jika siswa sama dengan totalSiswa pergi ke langkah 9
+5. Melakukan randomKesalahan dengan merandom 0(false) atau 1(true) Pergi ke langkah 6
+6. Jika randomKesalahan sama dengan 1(true) Maka guru akan menghukum murid , pergi ke langkah 8
+7. Jika randomKesalahan sama dengan 0(false) Maka guru akan memuji murid, pergi ke langkah 8
+8. guru mengecek siswa berikutnya , kembali ke langkah 4.
+9. guru selesai mengecek murid
 
 pseudocode
 =======================================
