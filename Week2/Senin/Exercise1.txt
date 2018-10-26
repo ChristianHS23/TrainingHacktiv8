@@ -45,7 +45,7 @@ else if 'tahun' modulus 4 EQUALS 0 AND 'tahun' modulus  100 EQUALS 0 AND 'tahun'
 else 
     DISPLAY 'bukan tahun kabisat'
 
-}
+
 
 
 
