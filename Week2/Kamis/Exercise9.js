@@ -5,8 +5,8 @@ function shoutOut(){
 }
 console.log(shoutOut()) // Menampilkan "Halo Function!" di console
 //-------------------Soal 2------------------------------------------------------------
-function calculateMultiply(){
-    return num1*num2;
+function calculateMultiply(n1,n2){
+    return n1*n2;
 }
 
 
@@ -18,8 +18,8 @@ console.log(hasilPerkalian); // Menampilkan angka 30
 
 //--------------------Soal 3-----------------------------------------------------------
 
-function processSentence(){
-    return "Nama saya " + name +", umur saya "+age + " tahun, alamat saya di "+address+" , dan saya punya hobby yaitu "+hobby+'!'
+function processSentence(info1,info2,info3,info4){
+    return "Nama saya " + info1+", umur saya "+info2 + " tahun, alamat saya di "+info3+" , dan saya punya hobby yaitu "+info4+'!'
 }
 
 var name = "Agus";
