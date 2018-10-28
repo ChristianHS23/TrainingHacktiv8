@@ -21,46 +21,40 @@ for(var i=0;i<count;i++){
 
 console.log()
 
-var rows3=6;
+var rows3=10;
 star=''
 
-//Loop dengan 1 for
-/* for (var i=0;i<rows3;i++){
-    star+="*"
-    console.log(star)
-} */
-
 //Loop dengan nested loop dengan memanggil star didalam nested loop
-for (var i=0;i<rows3;i++){  
+for (var i=0;i<~~(rows3/2);i++){  
     star=''
    
-    for(var j=i;j<=rows3-1;j++){
+    for(var j=i;j<=~~(rows3/2)-1;j++){
         star=star + " "
     }
-    for(var k=rows3*2-i;k<=rows3*2-1;k++){
+    for(var k=~~(rows3/2)*2-i;k<=~~(rows3/2)*2;k++){
         star=star + "*"
     }
-    for(var l=rows3*2-i;l<=rows3*2-1;l++){
+    for(var l=~~(rows3/2)*2-i;l<=~~(rows3/2)*2;l++){
         star=star + "*"
     }
-    for(var m=i;m<=rows3-1;m++){
+    for(var m=i;m<=~~(rows3/2)-1;m++){
         star=star + " "
     }
     console.log(star)
 
 }
-for (var i=0;i<rows3;i++){  
+for (var i=0;i<~~(rows3/2);i++){  
     star=''
-    for(var j=rows3-i;j<=rows3;j++){
+    for(var j=~~(rows3/2)-i;j<=~~(rows3/2);j++){
         star=star + " "
     }
-    for(var k=i;k<=rows3-2;k++){
+    for(var k=i;k<=~~(rows3/2)-1;k++){
         star=star + "*"
     }
-    for(var l=i;l<=rows3-2;l++){
+    for(var l=i;l<=~~(rows3/2)-1;l++){
         star=star + "*"
     }
-    for(var m=rows3-i;m<=rows3;m++){
+    for(var m=~~(rows3/2)-i;m<=~~(rows3/2);m++){
         star=star + " "
     }
     console.log(star)
