@@ -4,9 +4,9 @@ Algorithm
 1. simpan M dengan nilai berapapun
 2. simpan A dengan nilai berapapun
 3. simpan EF tanpa diberikan nilai
-3. Hitung hasil perkalian 'M' dengan 'A'
-4. setelah mendapatkan hasil perhitungan, isikan hasil kedalam 'EF'
-4. tampilkan nilai dari 'EF'
+4. Hitung hasil perkalian 'M' dengan 'A'
+5. setelah mendapatkan hasil perhitungan, isikan hasil kedalam 'EF'
+6. tampilkan nilai dari 'EF'
 
 
 pseudocode 
@@ -26,12 +26,12 @@ Alghoritm
 ==============================
 
 1. simpan tahun dengan nilai berapapun
-2. jika simpan 'Tahun di modulus 4 sama dengan 0 dan tahun di modulus 100 tidak sama dengan 0, masuk langkah ke-2
-2.      tampilkan  "tahun kabisat".
-3. jika input Tahun di modulus 4 sama dengan 0 dan tahun di modulus 100  sama dengan 0 dan tahun di modulus 400 sama dengan 0, masuk langkah ke-2 ;
-4.      tampilkan  "tahun kabisat".
-5. jika tidak, maka masuk langkah ke-6
-6.      tampilkan  "bukan tahun kabisat"
+2. jika simpan 'Tahun di modulus 4 sama dengan 0 dan tahun di modulus 100 tidak sama dengan 0, masuk langkah ke-3
+3.      tampilkan  "tahun kabisat".
+4. jika input Tahun di modulus 4 sama dengan 0 dan tahun di modulus 100  sama dengan 0 dan tahun di modulus 400 sama dengan 0, masuk langkah ke-3 ;
+5.      tampilkan  "tahun kabisat".
+6. jika tidak, maka masuk langkah ke-7
+7.      tampilkan  "bukan tahun kabisat"
 
 
 pseudocode 
