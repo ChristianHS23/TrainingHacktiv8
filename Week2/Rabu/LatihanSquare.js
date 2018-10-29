@@ -78,5 +78,18 @@ for (var i=0;i<~~(rows3/2);i++){
   
   // Modify values below to test your code
   console.log(multiplyAll([[2,2],[4],[5,6,7]]))
- 
- 
+ count=6
+ for(var i=0;i<count;i++){
+     star=''
+     for(var j=0;j<count;j++){
+         if(j==i){
+            star+='*'
+         }
+        
+         if(j==0||j==count-1){
+             star+='*'
+         }
+         star+=' '
+     }
+     console.log(star)
+ }
