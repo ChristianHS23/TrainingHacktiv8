@@ -1,20 +1,19 @@
 function angkaPalindrome(num) {
     // you can only write your code here!
-    
+    var validasi=false
     while(true){
         var balikangka=''
         var strnum = String(num);
         for(i=strnum.length-1;i>=0;i--){
             balikangka+=strnum[i]
         }
-        if(balikangka==num){
-            if(num<10){
-                return num+=1
-            }else{
-            return num
+        if(validasi==true){
+            if(balikangka==num){             
+                return num               
             }
-        }
-        
+        }else{
+            validasi=true
+        }       
         num++
     }
   }
