@@ -64,7 +64,7 @@ pseudocode
 ==============================
 STORE "pakaian foxi" with any value
 STORE "total pakaian"with any value
-WHILE "pakaian foxi" != "total pakaian"
+WHILE "pakaian foxi" NOT EQUALS TO "total pakaian"
   ADD "pakaian foxi" by 1
 
 DISPLAY "mesin cuci sudah menyala"!
@@ -91,13 +91,13 @@ pseudocode
 STORE "siswa" with 0
 STORE "totalSiswa" with 40
 STORE "randomKesalahan" with any value
-WHILE "siswa" < "totalSiswa"
+WHILE "siswa" LESS THAN "totalSiswa"
     "randomKesalahan" EQUALS to RANDOM 0 OR 1
-    Jika "randomKesalahan" EQUALS to 1
-	    DISPLAY "guru menghukum murid"
+    IF "randomKesalahan" EQUALS to 1
+	    DISPLAY 'guru menghukum murid'
 
-    Jika "randomKesalahan" EQUALS to 0
-	    DISPLAY "guru memuji murid"
+    IF "randomKesalahan" EQUALS to 0
+	    DISPLAY 'guru memuji murid'
 
     
 

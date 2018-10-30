@@ -15,7 +15,7 @@ var input = [
 ]
 console.log(dataHandlingHardCode(input))
 
-
+/*
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 function dataHandling(data){//versi Rapinya
   
@@ -40,5 +40,5 @@ var input = [
     ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
 ]
 dataHandling(input)
-
+*/
 

@@ -15,8 +15,8 @@
 
 */
 
-var user ='rasssa';
-var role ='Editor';
+var user ='';
+var role ='';
 
 if(user.length>=5){
     if(role=='Author'){

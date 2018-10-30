@@ -3,24 +3,26 @@
 
 //Contoh input
 var nama = 'sad';
-var peran = 'Penyihir';
+var peran = 'Tabib';
 //input nama saja
-if (nama!='' && peran=='') {
-    console.log("Halo "+ nama +",Pilih peranmu untuk memulai game!")
-}//Ksartia
-else if(nama !='' && peran =='Ksartia'){
+if (nama!='') {
+    //Ksartia
+    if(nama !='' && peran =='Ksartia'){
     console.log("Selamat datang di Dunia Proxytia, "+nama)
     console.log("Halo "+peran+' '+ nama+", kamu dapat menyerang dengan senjatamu!")
-}//Tabib
-else if(nama !='' && peran =='Tabib'){
+    }//Tabib
+    else if(nama !='' && peran =='Tabib'){
     console.log("Selamat datang di Dunia Proxytia, "+nama)
     console.log("Halo "+peran+' '+ nama+", kamu akan membantu temanmu yang terluka.")
-}//Penyihir
-else if(nama !='' && peran =='Penyihir'){
+    }//Penyihir
+    else if(nama !='' && peran =='Penyihir'){
     console.log("Selamat datang di Dunia Proxytia, "+nama)
     console.log("Halo "+peran+' '+ nama+", ciptakan keajaiban yang membantu kemenanganmu!")
-}//Nama Kosong
-else{
+    }else{
+        console.log("Halo "+ nama +",Pilih peranmu untuk memulai game!")
+    }
+    //Nama Kosong
+}else{
     console.log("Nama Harus diisi")
 }
 //-----------------------------------------------------------------
@@ -29,7 +31,7 @@ else{
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
 
-
+/* 
 var namaR = 'Chris';
 var jumlahPeran=3;
 var peranR = Math.floor(Math.random() *jumlahPeran);
@@ -43,7 +45,7 @@ console.log(peranR)
     peranR='Penyihir'
 }else{
     console.log("Random Error")
-} */
+} *//* 
 //-------------Random Menggunakan Switch----------
 switch(peranR){
     case 0:
@@ -55,8 +57,8 @@ switch(peranR){
     case 2:
         peranR='Penyihir'
         break
-}
-
+} */
+/* 
 //input nama saja
 if (namaR!='' && peranR=='') {
     console.log("Halo "+ namaR +",Pilih peranmu untuk memulai game!")
@@ -75,4 +77,4 @@ else if(namaR !='' && peranR =='Penyihir'){
 }//Nama Kosong
 else{
     console.log("Nama Harus diisi")
-}
+}  */
