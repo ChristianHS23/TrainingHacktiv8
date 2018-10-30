@@ -15,6 +15,9 @@ var input = [
 ]
 console.log(dataHandlingHardCode(input))
 
+
+
+
 /*
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 function dataHandling(data){//versi Rapinya

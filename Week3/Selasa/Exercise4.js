@@ -1,42 +1,55 @@
 function dataHandling2(data){
+    var bulanAlfa=''
     data.splice(1,1,"Roman Alamsyah Elsharawy")
     data.splice(2,1,"Provinsi Bandar Lampung")
-    data.splice(4,1,"SMA Internasional Metro")
-    data.splice(4,0,"Pria")
+    data.splice(4,1,"SMA Internasional Metro","Pria")
     console.log(data)
-    tanggal=data[3].split("/")
-    console.log(tanggal)
-    hari=tanggal[0]
-    bulan=tanggal[1]
-    tahun=tanggal[2]
-    switch(bulan){
-        case 1:'Januari'
-        break
-        case 2:'Februari'
-        break
-        case 3:'Maret'
-        break
-        case 4:'April'
-        break
-        case 5:'Mei'
-        break
-        case 6:'Juni'
-        break
-        case 7:'Juli'
-        break
-        case 08:'Agustus'
-        break
-        case 09:'September'
-        break
-        case 10:'Oktober'
-        break
-        case 11:'November'
-        break
-        case 12:'Desember'
-        break
+    var tanggal=data[3].split("/")
+    switch(tanggal[1]){
+        case '01':
+            bulanAlfa='Januari'
+            break
+        case '02':
+            bulanAlfa='Februari'
+            break
+        case '03':
+            bulanAlfa='Maret'
+            break
+        case '04':
+            bulanAlfa='April'
+            break
+        case '05':
+            bulanAlfa='Mei'
+            break
+        case '06':
+            bulanAlfa='Juni'
+            break
+        case '07':
+            bulanAlfa='Juli'
+            break
+        case '08':
+            bulanAlfa='Agustus'
+            break
+        case '09':
+            bulanAlfa='September'
+            break
+        case '10':
+            bulanAlfa='Oktober'
+            break
+        case '11':
+            bulanAlfa='November'
+            break
+        case '12':
+            bulanAlfa='Desember'
+            break
     }
-    console.log(bulan)
-
+    console.log(bulanAlfa)
+    tanggal.sort(function(a,b){return b-a})
+    console.log(tanggal)
+    var tanggal2=tanggal.join('-')
+    console.log(tanggal2)
+    var Nama=data[1].slice(0,15)
+    console.log(Nama)
 }
 
 
