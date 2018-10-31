@@ -55,12 +55,17 @@ function angkaPalindrome(num) {
         num=~~(num/10)     
         var cekpalL=num%10
         if(cekpalR!=cekpalL || cekpalMR !=cekpalML){
-           if(cekpalL>cekpalR && cekpalML==cekpalMR &&cekpalL>cekpalML){
-             cekpalL1=(cekpalL+1)*1000
-             cekpalR1=(cekpalL+1)
+           if(cekpalL>cekpalR && cekpalML==cekpalMR ){
+             cekpalL1=(cekpalL)*1000
+             cekpalR1=(cekpalL)
              var totalpal=cekpalL1+cekpalR1
              return totalpal
-           }else if(cekpalL>cekpalR && cekpalML==cekpalMR &&cekpal<cekpalML){
+           }else if(cekpalL>cekpalR && cekpalML==cekpalMR &&cekpalL>cekpalML){
+            cekpalL1=(cekpalL+1)*1000
+            cekpalR1=(cekpalL+1)
+            var totalpal=cekpalL1+cekpalR1
+            return totalpal
+          }else if(cekpalL>cekpalR && cekpalML==cekpalMR &&cekpal<cekpalML){
             cekpalL1=cekpalL*1000
             cekpalR1=cekpalL
             var totalpal=cekpalL1+cekpalR1
@@ -101,4 +106,4 @@ function angkaPalindrome(num) {
   console.log(angkaPalindrome(33)); // 11
   console.log(angkaPalindrome(865)); // 121
   console.log(angkaPalindrome(175)); // 181
-  console.log(angkaPalindrome(2538)); // 1001
+  console.log(angkaPalindrome(1000)); // 1001
