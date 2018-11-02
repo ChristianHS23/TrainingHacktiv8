@@ -1,4 +1,4 @@
-function palindrome(kata) {
+/* function palindrome(kata) {
     var kata2=''
     // you can only write your code here!
     for(var i=kata.length-1;i>=0;i--){
@@ -10,6 +10,19 @@ function palindrome(kata) {
         return false;
     }
   }
+   */
+
+
+   function palindrome(kata){
+   
+    for(var i=0; i<kata.length/2; i++){
+        if(kata[i] != kata[(kata.length-1)-i]){
+            return false
+        }    
+    }
+    return true
+}
+   
   
   // TEST CASES
   console.log(palindrome('katak')); // true

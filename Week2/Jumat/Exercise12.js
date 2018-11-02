@@ -1,4 +1,4 @@
-function konversiMenit(menit) {
+/* function konversiMenit(menit) {
     var jam = Math.floor(menit/60)
     var Menit= Math.floor(menit%60)
     var hasil=''
@@ -11,13 +11,29 @@ function konversiMenit(menit) {
     return hasil
     // you can only write your code here!
   }
+ */
+
+  function konversiMenit(menit) {
+    var Menit = Math.floor(menit/60)
+    var detik= Math.floor(menit%60)
+    var hasil=''
+    if(Menit<1){
+        hasil += detik + ' detik'
+    }else if(detik == 0){
+        hasil += Menit +' menit'
+    }else {
+        hasil += Menit +' menit' +' ' +detik +' detik'
+    }
+    return hasil
+    // you can only write your code here!
+  }
   console.log('Soal')
   // TEST CASES
-  console.log(konversiMenit(63)); // 1:03
-  console.log(konversiMenit(124)); // 2:04
-  console.log(konversiMenit(53)); // 0:53
-  console.log(konversiMenit(88)); // 1:28
-  console.log(konversiMenit(120)); // 2:00
+  console.log(konversiMenit(63)); // 1:03 // 1 menit 3 detik
+  console.log(konversiMenit(124)); // 2:04 // 2 menit 4 detik
+  console.log(konversiMenit(53)); // 0:53 // 53 detik
+  console.log(konversiMenit(88)); // 1:28  // 1 menit 28 detik
+  console.log(konversiMenit(120)); // 2:00 // 2 menit
 
 
 console.log('Iseng')

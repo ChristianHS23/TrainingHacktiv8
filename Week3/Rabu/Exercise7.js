@@ -9,12 +9,12 @@ function hitungJumlahKata(kalimat) {
               arrayBuang=kalimat[i]
               j++
           }else{
-              if(arrayHasil[i] == arrayHasil[j])
+              if(!arrayHasil[j])
               arrayHasil[j]=''
               arrayHasil[j]+=kalimat[i]
           }
         }
-        return arrayHasil.length      
+        return arrayHasil     
 }
 
   

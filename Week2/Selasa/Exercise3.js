@@ -5,17 +5,17 @@
 var nama = 'sad';
 var peran = 'Tabib';
 //input nama saja
-if (nama!='') {
+if (nama) {
     //Ksartia
-    if(nama !='' && peran =='Ksartia'){
+    if( peran =='Ksartia'){
     console.log("Selamat datang di Dunia Proxytia, "+nama)
     console.log("Halo "+peran+' '+ nama+", kamu dapat menyerang dengan senjatamu!")
     }//Tabib
-    else if(nama !='' && peran =='Tabib'){
+    else if(peran =='Tabib'){
     console.log("Selamat datang di Dunia Proxytia, "+nama)
     console.log("Halo "+peran+' '+ nama+", kamu akan membantu temanmu yang terluka.")
     }//Penyihir
-    else if(nama !='' && peran =='Penyihir'){
+    else if(peran =='Penyihir'){
     console.log("Selamat datang di Dunia Proxytia, "+nama)
     console.log("Halo "+peran+' '+ nama+", ciptakan keajaiban yang membantu kemenanganmu!")
     }else{
