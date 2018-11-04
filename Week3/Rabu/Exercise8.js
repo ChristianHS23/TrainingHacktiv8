@@ -8,7 +8,7 @@ function pasanganTerbesar(num) {
             hasil=temp
         }
     }
-    return hasil
+    return parseInt(hasil)
   }
   
   // TEST CASES
