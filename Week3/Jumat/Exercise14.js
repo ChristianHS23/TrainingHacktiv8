@@ -1,16 +1,24 @@
 function mengelompokkanAngka(arr) {
+        var hasilarr=[]
+        var ahasilgenap=[]
+        var ahasilganjil=[]
+        var ahasilK3=[]
+   
     // you can only write your code here!
     for(var i=0;i<arr.length;i++){
         //looping 1
-        for(var j=0;j<arr.length;j++){
-            //looping 2
-            for(var k=0;k<arr.length;k++){
-                //looping 3
-                
+            if(arr[i]%3==0){
+               ahasilK3.push(arr[i])
             }
-        }
-
+            else if(arr[i]%2==1){
+               ahasilganjil.push(arr[i])
+            }
+            else if(arr[i]%2==0){ 
+               ahasilgenap.push(arr[i])
+            }                
     }
+    hasilarr=[ahasilgenap,ahasilganjil,ahasilK3]
+    return hasilarr
   }
   
   // TEST CASES
