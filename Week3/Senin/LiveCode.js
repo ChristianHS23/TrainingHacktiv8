@@ -15,8 +15,8 @@
 
 */
 
-var user ='';
-var role ='';
+var user ='desu';
+var role ='Author';
 
 if(user.length>=5){
     if(role=='Author'){
@@ -34,7 +34,7 @@ if(user.length>=5){
     }else{
         console.log("login failed")
     }
-}else if(user==''&&role==''){
+}else if(user==''||role==''){
     console.log('Guest User dapat mengakses menu ')
     console.log('-Home')
     console.log('-loguot')
