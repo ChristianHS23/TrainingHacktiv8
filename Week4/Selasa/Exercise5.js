@@ -18,6 +18,7 @@
      
       for(var i=0;i<kata.length;i++){
           var code=kata.charCodeAt(i)+1//merubah string ke keycode
+          console.log(code)
           var strcode=String.fromCharCode(code)//mengembalikan keycode ke string
           temp += strcode
       }

@@ -1,4 +1,4 @@
-
+/* 
 function digitsGrouper(numbers) {
     // only code here..
     var digit1=[]
@@ -14,6 +14,19 @@ function digitsGrouper(numbers) {
     }
     hasilarr=[digit1,digit2,digit3,digit4]
     return hasilarr
+  } */
+
+  function digitsGrouper(numbers){
+      var result=[[],[],[],[]]
+      for(var i=0;i<numbers.length;i++){
+          var index = String(numbers[i]).length - 1
+          if(result[index]== undefined){
+              result[index]= [numbers[i]]
+          }else{
+              result[index].push(numbers[i])
+          }
+      }
+      return result
   }
   
   console.log(digitsGrouper([1, 12, 13, 0, 88, 123, 456])); // [ [ 1, 0 ], [ 12, 13, 88 ], [ 123, 456 ], [] ]

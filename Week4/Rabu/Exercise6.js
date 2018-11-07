@@ -1,10 +1,19 @@
 function digitPerkalianMinimum(angka) {
     // you can only write your code here!
-    var count =0
-    for(var i=1;i<angka;i++){
-        if(angka%i==0 ) count++
+    var temp=[]
+    for(var i=1;i<=angka;i++){
+        for(var j=angka;j>0;j--){
+            if(i*j == angka){
+                temp.push(i+''+j)
+            }
+        }
   }
-  return count
+  hasil=temp[0].length
+  for(var k=0;k<temp.length;k++){
+      if(temp[k].length<hasil)
+        hasil=temp[k].length
+  }
+  return hasil
 }
   
   // TEST CASES
