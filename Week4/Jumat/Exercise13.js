@@ -1,9 +1,37 @@
 function sorting(arrNumber) {
     // code di sini
+    var checksort=false
+    while(!checksort){
+        checksort=true
+        for(var i=0;i<arrNumber.length;i++){
+            if(arrNumber[i-1]>arrNumber[i]){
+                checksort=false
+                var temp=arrNumber[i-1]
+                arrNumber[i-1]=arrNumber[i]
+                arrNumber[i]=temp
+            }
+        }    
+    }
+    return arrNumber
   }
-  
   function getTotal(arrNumber) {
     // code di sini
+    var temp=arrNumber[arrNumber.length-1]
+    var counter=0
+    if(!arrNumber.length)
+        return '\'\''
+
+    /* for(var i=0;i<arrNumber.length;i++){
+       
+        if(arrNumber[i]>temp){
+            temp=arrNumber[i]
+        }
+    }  */
+    for(var j=0;j<arrNumber.length;j++){
+        if(arrNumber[j]==temp) 
+            counter++
+    }
+    return 'Angka paling besar adalah '+temp+' dan jumlah kemunculan sebanyak '+counter+' kali'
   }
   
   function mostFrequentLargestNumbers(arrNumber) {
