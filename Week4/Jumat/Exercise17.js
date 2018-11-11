@@ -1,11 +1,19 @@
 function kaliTerusRekursif(angka) {
     // you can only write your code here!
     var str=String(angka)
+    var temp=1
     if(str.length===1){
         return angka
-       }else{      
-        var hasilKali= Number(str[0]) * kaliTerusRekursif(str.slice(1))     
-        return kaliTerusRekursif(hasilKali)
+       }else{   
+           //cara salah  
+            /* var hasilKali=( Number(str[0]) * kaliTerusRekursif(str.slice(1))  )   
+            return kaliTerusRekursif(hasilKali) */
+            //cara benar
+            for(var i=0;i<str.length;i++){
+                temp*=str[i]
+            }
+            
+            return kaliTerusRekursif(temp)
         }
   }
   

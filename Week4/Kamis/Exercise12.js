@@ -19,13 +19,12 @@ function countProfit(shoppers) {
          totalProfit: 0 })
          var totalAmount=0
          for(var j=0;j<shoppers.length;j++){
-            if(shoppers[j].product==hasil[i].product){
-                if(hasil[i].leftOver>=shoppers[j].amount){
+            if(shoppers[j].product==hasil[i].product && hasil[i].leftOver>=shoppers[j].amount){
                     hasil[i].shoppers.push(shoppers[j].name)
                     hasil[i].leftOver-=shoppers[j].amount
                     totalAmount+=shoppers[j].amount
                     hasil[i].totalProfit=listBarang[i][1]*totalAmount
-                }
+                
             } 
         }
     }

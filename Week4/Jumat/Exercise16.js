@@ -1,13 +1,14 @@
 function totalDigitRekursif(angka) {
     // you can only write your code here!
     var str=String(angka)
-    if(angka.length===0){
-        return 0
+    if(str.length==1){
+    //    console.log(str[0])
+        return Number(str[0])
     }else{
-        return Number(str[0]) + totalDigitRekursif(String(angka).slice(1))
+     //   console.log(str[0]+'+')
+        return Number(str[0]) + totalDigitRekursif(str.slice(1))
     }
   }
-  
   // TEST CASES
   console.log(totalDigitRekursif(512)); // 8
   console.log(totalDigitRekursif(1542)); // 12
