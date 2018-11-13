@@ -2,19 +2,24 @@ function groupAnimals(animals) {
   // you can only write your code here!
   var hasil = []
   animals.sort()
+  var temp=[]
+  var hurufDepan = animals[0][0]
+  
   for (var i = 0; i < animals.length; i++) {
-      var animalArr = []
-      var temp = animals[i]
-      var hurufDepan = animals[i][0]
-      for (var j = animals.length - 1; j > i; j--) {
-          if (hurufDepan === animals[j][0]) {
-              temp += ', ' + animals[j]
-              animals.splice(j, 1)
-          }
-      }
-      animalArr.push(temp)
-      hasil.push(animalArr)
+     if(hurufDepan==animals[i][0]){
+         temp.push(animals[i])
+     }else if(hurufDepan!=animals[i][0]){
+        hurufDepan=animals[i][0]
+        hasil.push(temp)
+        temp=[animals[i]]
+        //temp.push(animals[i])
+     }
+     
   }
+  if(temp.length){
+      hasil.push(temp)
+  }
+  
   return hasil
 }
 
