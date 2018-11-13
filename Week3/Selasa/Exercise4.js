@@ -43,10 +43,12 @@ function dataHandling2(data){
             bulanAlfa='Desember'
             break
     }
+    var sortedDate=tanggal
     console.log(bulanAlfa)
-    tanggal.sort(function(a,b){return b-a})
-    console.log(tanggal)
     var tanggal2=tanggal.join('-')
+    sortedDate.sort(function(a,b){return b-a})
+    console.log(sortedDate)
+    
     console.log(tanggal2)
     var Nama=data[1].slice(0,15)
     console.log(Nama)
