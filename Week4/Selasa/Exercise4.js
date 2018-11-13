@@ -15,7 +15,7 @@ function cariModus(arr) {
            modus=arr[i] //nilai sama dengan arr yang sama tersebut
         }
     }
-    if(max==arr.length) 
+    if(max == arr.length-1) 
         return -1
     else if(max>0) 
         return modus
