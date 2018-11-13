@@ -2,7 +2,7 @@ function changeMe(arr) {
     // you can only write your code here!
     var tahun=2018
     for(var i=0;i<arr.length;i++){
-        if(arr[i][3]!= undefined)
+        if(arr[i][3]!= undefined && arr[i][3]<=2018)
             age=tahun-arr[i][3]
         else
             age= 'Invalid birth year!'

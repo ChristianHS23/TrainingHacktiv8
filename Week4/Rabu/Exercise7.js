@@ -12,6 +12,7 @@ function urutkanAbjad(str) {
     }
    return strtemp
 }
+//Pakai Sort yang biasa saja gk usah pakai keycode
   
   // TEST CASES
   console.log(urutkanAbjad('hello')); // 'ehllo'
