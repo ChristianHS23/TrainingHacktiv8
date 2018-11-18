@@ -48,7 +48,7 @@ function dataHandling2(data){
     var tanggal2=tanggal.join('-')
     sortedDate.sort(function(a,b){return b-a})
     console.log(sortedDate)
-    
+
     console.log(tanggal2)
     var Nama=data[1].slice(0,15)
     console.log(Nama)

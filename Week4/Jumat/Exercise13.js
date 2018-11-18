@@ -27,6 +27,7 @@ function sorting(arrNumber) {
             temp=arrNumber[i]
         }
     }  */
+    
     for(var j=0;j<arrNumber.length;j++){
         if(arrNumber[j]==temp) 
             counter++
